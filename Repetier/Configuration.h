@@ -44,9 +44,10 @@
 // ################ END MANUAL SETTINGS ##########################
 
 #undef FAN_PIN
-#define FAN_PIN -1
 #undef FAN_BOARD_PIN
+#define FAN_PIN ORIG_FAN_PIN
 #define FAN_BOARD_PIN -1
+
 #define BOARD_FAN_SPEED 255
 #define FAN_THERMO_PIN -1
 #define FAN_THERMO_MIN_PWM 128
@@ -83,8 +84,8 @@
 #define EXT0_Z_OFFSET 0
 #define EXT0_STEPS_PER_MM 93
 
-#define EXT0_TEMPSENSOR_TYPE 50
-#define EXT1_TEMPSENSOR_TYPE 8
+#define EXT0_TEMPSENSOR_TYPE 1
+#define EXT1_TEMPSENSOR_TYPE 1
 
 #define EXT0_TEMPSENSOR_PIN TEMP_0_PIN
 #define EXT0_HEATER_PIN HEATER_0_PIN
